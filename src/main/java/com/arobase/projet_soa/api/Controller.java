@@ -25,11 +25,11 @@ public class Controller {
     public List<Etudiant> getAllEtudiants() {
         return etudiantService.getAllEtudiants();
     }
-    @GetMapping("/etudiants/searchm/{matricule}")
+    @GetMapping("/etudiants/matricule")
     public Etudiant getEtudiantByMatricule(@RequestParam String matricule) {
         return etudiantService.getEtudiantByMatricule(matricule);
     }
-    @GetMapping("/etudiants/search/{id}")
+    @GetMapping("/etudiants/search")
     public Etudiant getEtudiantById(@RequestParam Long id) {
         return etudiantService.getEtudiantById(id);
     }

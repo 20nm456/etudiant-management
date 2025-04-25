@@ -1,5 +1,5 @@
 CREATE TABLE etudiant (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id int AUTO_INCREMENT PRIMARY KEY,
     matricule VARCHAR(50) NOT NULL UNIQUE,
     nom VARCHAR(255) NOT NULL,
     prenom VARCHAR(255) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE etudiant (
 );
 
 CREATE TABLE cote (
-	id BIGINT PRIMARY KEY AUTO_INCREMENT,
+	id int PRIMARY KEY AUTO_INCREMENT,
     matiere VARCHAR(255) NOT NULL,
     type VARCHAR(50) NOT NULL, -- Examen, Devoir, etc.
     date DATE L,
