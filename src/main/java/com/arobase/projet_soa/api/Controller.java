@@ -38,10 +38,6 @@ public class Controller {
     public List<Cote> getAllCotes() {
         return coteService.getAllCotes();
     }
-    @GetMapping("/cotes/searchid")
-    public Cote getCoteById(@RequestParam Long id) {
-        return coteService.getCoteById(id);
-    }
     @GetMapping("/cotes/search")
     public List<Cote> searchCotes(@RequestParam String matricule) {
         return coteService.getCotesByEtudiantMatricule(matricule);
